@@ -27,7 +27,7 @@ int main()
     TV.number = 1365534;
 
     goods coffee_machines;
-    coffee_machines.name = "Coffe machine PHILIPS Series 5000 EP5030";
+    coffee_machines.name = "Coffee machine PHILIPS Series 5000 EP5030";
     coffee_machines.registration_date = "10.09.2020";
     coffee_machines.price = 52290;
     coffee_machines.quantity = 513;
@@ -61,7 +61,7 @@ int main()
     vape.quantity = 721;
     vape.number = 3765192;
 
-    cout << "What product do you choose? (TV, coffee machines, notebook, iphone, powerbank, vape?) "<< endl;
+    cout << "What product do you choose? (TV, coffee_machines, notebook, iphone, powerbank, vape?) "<< endl;
     string product;
     cin >> product;
     int money;
@@ -77,10 +77,10 @@ int main()
             TV.quantity = TV.quantity - quant;
             money = TV.price * quant;
             TV.Print();
-            cout << "Price is: " << money << "\nQuantity is: " << quant << endl;
+            cout << "Price is: " << money << " Rub." << "\nQuantity is: " << quant << endl;
         } else cout << "Too many products" << endl;
     } 
-    else if (product == "coffee machines")
+    else if (product == "coffee_machines")
     {
         coffee_machines.Print();
         cout << "How much will you buy?" << endl;
@@ -90,7 +90,7 @@ int main()
             coffee_machines.quantity = coffee_machines.quantity - quant;
             money = coffee_machines.price * quant;
             coffee_machines.Print();
-            cout << "Price is: " << money << "\nQuantity is: " << quant << endl;
+            cout << "Price is: " << money << " Rub." << "\nQuantity is: " << quant << endl;
         } else cout << "Too many products" << endl;
     }
     else if (product == "notebook")
@@ -103,7 +103,7 @@ int main()
             notebook.quantity = notebook.quantity - quant;
             money = notebook.price * quant;
             notebook.Print();
-            cout << "Price is: " << money << "\nQuantity is: " << quant << endl;
+            cout << "Price is: " << money << " Rub." << "\nQuantity is: " << quant << endl;
         } else cout << "Too many products" << endl;
     }
     else if (product == "iphone")
@@ -116,7 +116,7 @@ int main()
             iphone.quantity = iphone.quantity - quant;
             money = iphone.price * quant;
             iphone.Print();
-            cout << "Price is: " << money << "\nQuantity is: " << quant << endl;
+            cout << "Price is: " << money << " Rub." << "\nQuantity is: " << quant << endl;
         } else cout << "Too many products" << endl;
     }
     else if (product == "powerbank")
@@ -129,7 +129,7 @@ int main()
             powerbank.quantity = powerbank.quantity - quant;
             money = powerbank.price * quant;
             powerbank.Print();
-            cout << "Price is: " << money << "\nQuantity is: " << quant << endl;
+            cout << "Price is: " << money << " Rub." << "\nQuantity is: " << quant << endl;
         } else cout << "Too many products" << endl;
     }
     else if (product == "vape")
@@ -142,8 +142,8 @@ int main()
             vape.quantity = vape.quantity - quant;
             money = vape.price * quant;
             vape.Print();
-            cout << "Price is: " << money << "\nQuantity is: " << quant << endl;
+            cout << "Price is: " << money << " Rub." << "\nQuantity is: " << quant << endl;
         } else cout << "Too many products" << endl;
     }
-    else cout << "Product out of stock" << endl << endl;    
+    else cout << "Product out of stock" << endl << endl;
 }
