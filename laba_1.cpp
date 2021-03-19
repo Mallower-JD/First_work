@@ -15,6 +15,7 @@ public:
     {
         cout << " Name of goods: " << name << "\n Price: " << price << " Rub." << "\n Quantity: " << quantity <<  "\n Article number: " << number << "\n Date of delivery: " << registration_date << endl << endl; 
     }
+    
 };
 
 int main()
