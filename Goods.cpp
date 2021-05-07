@@ -79,16 +79,6 @@ public:
         return number;
     }
 
-    string ToStringPrice()
-    {
-        string s = "";
-        int i; 
-        for (i = price; i > 9; i /= 10) s += to_string(i % 10);
-        s += to_string(i);
-        reverse(s.begin(), s.end());
-        return s;
-    }
-
     int get_total_cost()
     {
         return price * amount;
