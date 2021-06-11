@@ -1,10 +1,9 @@
-#include "Goods.h"
-using namespace std;
-int main(){
-/*тут писать весь код*/
+#include <iostream>
+#include "goods_test.h"
 
+int main() {    
+    
 
-
-
-return 0;
+    std::cout << std::endl;
+    return 0;
 }
