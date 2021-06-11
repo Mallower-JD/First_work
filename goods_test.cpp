@@ -18,20 +18,20 @@ std::string good::get_data() const{
     return this->data;
 }
 void set_name(const string& this->name){
-    if (name == nullptr || length(trim(name)) <0){ 
+    if (S.empty(this->name)){ 
         throw;
     }
     return this->name;
 }
 void set_data(const string& this->data){
-    if (data == nullptr || length(trim(data)) <0){ 
+    if (S.empty(this->data)){ 
         throw;
     }
     return this->data;
 }
 
 void set_number(const int this->number){
-    if (number == nullptr || length(trim(number)) <0){
+    if (S.empty(this->number)){
         throw;
     } 
     return this->number;
