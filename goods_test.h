@@ -21,7 +21,7 @@ public:
      * @param amount - количество
      * @param number - номер накладной
      */
-    goods(const string name, const string data, const double price, const int amount, const int number);
+    goods(const string& name, const string& data, const double price, const int amount, const int number);
     
     /**
      * @brief Конструктор копирования
@@ -45,9 +45,9 @@ public:
      */
     int get_amount() const;
 
-    void set_name(const string name);
+    void set_name(const string& name);
 
-    void set_data(const string data);
+    void set_data(const string& data);
 
     void set_number(const int number);
 
