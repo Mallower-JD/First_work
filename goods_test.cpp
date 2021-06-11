@@ -4,31 +4,68 @@
 #include "goods_test.h"
 #include "helper.h"
 
-goods::goods(string name, string data, int price, int amount, int number) : name(name), data(data), price(price), amount(amount), number(number) {}
+goods::goods(string name, string data, double price, int amount, int number) : name(name), data(data), price(price), amount(amount), number(number) {}
 
-
-int goods::get_p() const {
+int goods::get_price() const {
     return this->price;
 }
-int goods::get_a() const {
+int goods::get_amount() const {
     return this->amount;
 }
-/*
-void add_number(goods& price, int i){
-    return get_p() + i;
+std::string good::get_name() const{
+    return this->name;
 }
-*/
+std::string good::get_data() const{
+    return this->data;
+}
+void set_name(const string this->name){
+    if (this->name != ""){ 
+        throw;
+    }
+    return this->name;
+}
+void set_data(const string this->data){
+    if (this->data != ""){ 
+        throw;
+    }
+    return this->data;
+}
 
+void set_number(const int this->number){
+    if (this->number < 0 ){
+        throw;
+    } 
+    return this->number;
+}
 
-goods goods::sum(const goods& other) const {
-    return ::sum_helper(this->get_p(), other.get_p());
+void set_price(const double this->price){
+    if (this->price > 0 ){
+        throw;
+    }
+    return this->price;
 }
-goods goods::sub(const goods& other) const {
-    return ::sub_helper(this->get_p(), other.get_p());
+void set_amount(const int this->amount){
+    if (this->amount > 0 ){
+      throw;  
+    }
+    return this->amount;
 }
-goods goods::calculat(const goods& other) const {
-    return ::calculat_helper(this->get_p(), other.get_p());
+double get_cost(double w) const{
+    return this->price * w;
 }
+double get_plus_cost(double w) const{
+    return this->price + w
+}
+double get_minus_cost(double w) const{
+    return this->price - w;
+}
+double get_plus_amount(double w) const{
+    return this->amount + w;
+}
+double get_minus_amount(double w) const{
+    return this->amount - w;
+}
+
 
 string goods::to_string() const {
     stringstream buffer;

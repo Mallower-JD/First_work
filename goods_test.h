@@ -10,6 +10,7 @@ class goods {
     int price;
     int amount;
     int number;
+    double w;
 public:
     /**
      * @brief Конструктор с параметрами
@@ -20,7 +21,7 @@ public:
      * @param amount - количество
      * @param number - номер накладной
      */
-    goods(const string name, const string data, const int price, const int amount, const int number);
+    goods(const string name, const string data, const double price, const int amount, const int number);
     
     /**
      * @brief Конструктор копирования
@@ -37,27 +38,34 @@ public:
     /**
      * @brief Возвращает цену товаров
      */
-    int get_p() const;
+    double get_price() const;
     
     /**
      * @brief Возвращает количество товаров
      */
-    int get_a() const;
+    int get_amount() const;
+
+    void set_name(const string name);
+
+    void set_data(const string data);
+
+    void set_number(const int number);
+
     
     /**
      * @brief Возвращает сумму цены/количества товаров
      */
-    goods sum(const goods& other) const;
+    void set_amount(const int amount);
    
     /**
      * @brief Возвращает разницу цены/количества товаров
      */
-    goods sub(const goods& other) const;
+    void set_price(const double price);
 
     /**
      * @brief Возвращает вычисление стоимости товара
      */
-    goods calculat(const goods& other) const;
+    double get_cost() const;
 
    string to_string() const;
 

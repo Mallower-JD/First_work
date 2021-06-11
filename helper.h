@@ -7,7 +7,7 @@
  * \return ответ
  */
 
-int sum_helper(const int x, const int y);
+double sum_helper(const double x, const double y);
 
 /**
  * \brief метод вычитания двух чисел 
@@ -16,7 +16,7 @@ int sum_helper(const int x, const int y);
  * \return ответ
  */
 
-int sub_helper(const int x, const int y);
+double sub_helper(const double x, const double y);
 
 /**
  * \brief метод умножения двух чисел 
@@ -25,4 +25,4 @@ int sub_helper(const int x, const int y);
  * \return ответ
  */
 
-int calculat_helper(const int x, const int y);
+double calculat_helper(const double x, const double y);
